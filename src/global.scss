@@ -1,0 +1,20 @@
+$mainColor: #44475a;
+$secondColor: #50fa7b;
+$thirdColor: #f8f8f2;
+$forthColor: #282a36;
+
+$colorCode1: #ff79c6;
+$colorCode2: #f1fa8c;
+$colorCode3: #bd93f9;
+
+@mixin mobile {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media (max-width: 1295px) and (min-width: 600px) {
+    @content;
+  }
+}

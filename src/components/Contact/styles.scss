@@ -1,0 +1,107 @@
+@import "../../global.scss";
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  flex-direction: column;
+
+  .vertical-line {
+    height: 16vh;
+    border: 2px solid $secondColor;
+    display: flex;
+    background-color: $secondColor;
+    box-shadow: 0 0 10px $secondColor;
+  }
+
+  .title {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    margin-top: 65px;
+    font-size: 1.5rem;
+
+    top: 0px;
+    border: 3px solid $secondColor;
+    border-radius: 20px;
+    padding: 15px 40px 15px 40px;
+    box-shadow: 0 0 10px $secondColor;
+    font-weight: 700;
+    transition: all 0.3s;
+    white-space: nowrap;
+
+    @include mobile {
+      font-size: 1.2rem;
+
+      padding: 10px 25px 10px 25px;
+    }
+
+    .color1 {
+      color: white;
+    }
+    .color2 {
+      color: #ff79c6;
+    }
+    .color3 {
+      color: #effa78;
+    }
+  }
+
+  .gerson {
+    border-radius: 40px;
+    border: 3px solid $secondColor;
+
+    box-shadow: 0 0 10px $secondColor;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 8px;
+    span {
+      font-size: 1.4rem;
+      font-weight: 500;
+      padding: 5px 0px 5px 0px;
+      margin-left: 10px;
+    }
+
+    .line {
+      padding-left: 30px;
+
+      a {
+        color: $colorCode1;
+
+        .icon {
+          width: 40px;
+          height: 40px;
+          justify-content: center;
+          align-items: center;
+          margin-left: 10px;
+        }
+      }
+
+      .key {
+        color: $colorCode3;
+      }
+
+      .two-point {
+        color: $colorCode1;
+      }
+
+      .value {
+        color: $colorCode2;
+      }
+
+      .comma {
+        color: white;
+      }
+
+      .number {
+        color: $colorCode3;
+      }
+    }
+  }
+}

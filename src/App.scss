@@ -1,0 +1,75 @@
+@import "./global.scss";
+
+.cursor {
+  width: 30px;
+  height: 30px;
+  border: 3px solid $colorCode1;
+  border-radius: 100%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+
+  transition: all 150ms ease;
+  transition-property: opacity, background-color, transform, mix-blend-mode;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.cursor--clicked {
+  transform: translate(-50%, -50%) scale(0.9);
+  background-color: $colorCode1;
+}
+
+.cursor--hidden {
+  opacity: 0;
+}
+
+html,
+body {
+  cursor: none;
+}
+
+.app {
+  height: 100vh;
+  color: white;
+
+  .sections {
+    width: 100%;
+    height: calc(100vh - 70px);
+
+    position: relative;
+    top: 70px;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scrollbar-width: none; // for firefox
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @include mobile {
+      scroll-snap-type: y proximity;
+    }
+
+    @include medium {
+      scroll-snap-type: y proximity;
+    }
+
+    > * {
+      width: 100%;
+      height: calc(100vh - 70px);
+      scroll-snap-align: start;
+    }
+  }
+
+  .particles-bg-canvas-self {
+    background-color: $forthColor;
+  }
+
+  @include mobile {
+    background-color: $forthColor;
+  }
+}
