@@ -13,6 +13,7 @@ import biscoitoImg from "./assets/biscoito.jpg";
 import netflixImg from "./assets/netflix.jpg";
 import parallaxImg from "./assets/parallax.jpg";
 import instagramImg from "./assets/instagram.jpg";
+import pokedexImg from "./assets/pokedex.jpg";
 
 export const featuredPortfolio = [
   {
@@ -29,9 +30,9 @@ export const featuredPortfolio = [
   },
   {
     id: 3,
-    title: "Repos",
-    img: reposImg,
-    link: "https://github.com/GersonST/repos",
+    title: "Pokedex Evolution",
+    img: pokedexImg,
+    link: "https://github.com/GersonST/pokedex-evolution",
   },
   {
     id: 4,
