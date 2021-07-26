@@ -14,6 +14,7 @@ import netflixImg from "./assets/netflix.jpg";
 import parallaxImg from "./assets/parallax.jpg";
 import instagramImg from "./assets/instagram.jpg";
 import pokedexImg from "./assets/pokedex.jpg";
+import happyImg from "./assets/Happy_Devices.png";
 
 export const featuredPortfolio = [
   {
@@ -30,27 +31,15 @@ export const featuredPortfolio = [
   },
   {
     id: 3,
-    title: "Pokedex Evolution",
-    img: pokedexImg,
-    link: "https://github.com/GersonST/pokedex-evolution",
+    title: "Happy app",
+    img: happyImg,
+    link: "https://github.com/GersonST/happy-app",
   },
   {
     id: 4,
-    title: "Nasa APOD",
-    img: nasaImg,
-    link: "https://github.com/GersonST/nasa-apod",
-  },
-  {
-    id: 5,
-    title: "Finans",
-    img: finansImg,
-    link: "https://github.com/GersonST/finans-financa-pessoal",
-  },
-  {
-    id: 6,
-    title: "Museu Nacional",
-    img: museuImg,
-    link: "https://github.com/GersonST/museu-nacional-webpage",
+    title: "Pokedex Evolution",
+    img: pokedexImg,
+    link: "https://github.com/GersonST/pokedex-evolution",
   },
 ];
 
@@ -105,6 +94,12 @@ export const mobilePortfolio = [
     title: "Letmeask",
     img: letmeaskImg,
     link: "https://github.com/GersonST/letmeasknlw6",
+  },
+  {
+    id: 3,
+    title: "Happy app",
+    img: happyImg,
+    link: "https://github.com/GersonST/happy-app",
   },
 ];
 
