@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./styles.scss";
 import { init } from "ityped";
 import Fade from "react-reveal/Fade";
+import avatar from "../../assets/avatar.jpg";
 
 export default function Intro() {
   const textRef = useRef();
@@ -22,7 +23,7 @@ export default function Intro() {
       <Fade left>
         <div className="left">
           <div className="imgContainer">
-            <img src="assets/avatar.jpg" alt="" />
+            <img src={avatar} alt="" />
           </div>
         </div>
       </Fade>

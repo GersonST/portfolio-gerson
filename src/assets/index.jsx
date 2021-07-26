@@ -6,9 +6,6 @@ import ReactJS from "../../assets/react.svg";
 import ExpoLogo from "../../assets/expo-icon.svg";
 import letmeaskImg from "../../assets/letmeask-mobile.jpeg";
 import firebaseLogo from "../../assets/firebase.svg";
-import sassLogo from "../../assets/sass.svg";
-import nasaMobileImg from "../../assets/nasa-apod-mobile.jpg";
-import arrowLogo from "../../assets/arrow.png";
 
 export default function Work() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -52,7 +49,7 @@ export default function Work() {
         },
         {
           t: "Sass",
-          logo: sassLogo,
+          logo: "./assets/sass.svg",
         },
       ],
     },
@@ -60,12 +57,12 @@ export default function Work() {
       id: "3",
       title: "Nasa APOD",
       desc: "This app displays beautiful astronomy photos for the current day and month from the NASA APOD API",
-      img: nasaMobileImg,
+      img: "./assets/nasa-apod-mobile.jpg",
       link: "https://github.com/GersonST/nasa-apod",
       tech: [
         {
           t: "React",
-          logo: ReactJS,
+          logo: "./assets/react.svg",
         },
       ],
     },
@@ -124,13 +121,13 @@ export default function Work() {
         </Fade>
       </div>
       <img
-        src={arrowLogo}
+        src="assets/arrow.png"
         className="arrow left"
         alt=""
         onClick={() => handleClick("left")}
       />
       <img
-        src={arrowLogo}
+        src="assets/arrow.png"
         className="arrow right"
         alt=""
         onClick={() => handleClick()}
