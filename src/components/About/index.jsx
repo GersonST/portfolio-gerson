@@ -12,9 +12,7 @@ export default function About() {
           <span className="color3">Gerson.json</span>
         </div>
       </Fade>
-      <Fade>
-        <div className="vertical-line"></div>
-      </Fade>
+
       <Fade cascade>
         <div className="box">
           <div class="gerson">

@@ -15,8 +15,6 @@ export default function Contact() {
         </div>
       </Fade>
 
-      <div className="vertical-line"></div>
-
       <Fade cascade>
         <div className="box">
           <div class="gerson">
